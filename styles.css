@@ -1,0 +1,516 @@
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        width: 90%; 
+        padding: 2rem; 
+    }
+
+    .product-details {
+        padding-left: 20px;
+        margin-top: 0;
+    }
+
+    .product-name {
+        font-size: 28px;
+    }
+
+    .marmeto {
+        margin-top: 60px;
+        font-size: 16px;
+    }
+
+    .price-container {
+        width: 183px;
+        text-align: left;
+    }
+
+    .original-price,
+    .sale-price,
+    .discount {
+        text-align: left;
+        font-size: 21px;
+    }
+
+    .product-description {
+        width: 558px;
+        font-size: 20px;
+        padding: 0;
+    }
+
+    .incbutton {
+        width: auto;
+        margin-top: 0;
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .container {
+        flex-direction: column;
+        width: 100%;
+        padding: 0; 
+    }
+
+    .product-details {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .product-name {
+        width: auto; 
+        font-size: 24px;
+    }
+
+    .marmeto {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .price-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .original-price,
+    .sale-price,
+    .discount {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .product-description {
+        width: 100%; 
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .choose-color,
+    .choose-size {
+        width: auto; 
+        text-align: center;
+    }
+
+    .cart-button,
+    .incbutton {
+        width: 100%; 
+        margin-top: 20px;
+        text-align: center;
+        left: 0; 
+    }
+}
+
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    display: flex; 
+}
+
+.product-images {
+    flex: 1; 
+}
+
+.product-details {
+    flex: 1;
+    padding-left: 20px; 
+}
+
+
+.product-name {
+
+    width: 265px;
+    height: 34px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 180px;
+    color: #000000;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.marmeto{
+
+    width: 68px;
+    height: 5px;
+    margin-top: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    position:absolute;
+    color: #B9BBBF;
+
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+}
+.price-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+    flex-direction: column; 
+    width: 183px;
+    height: 310px;
+    left: 778px;
+    top: 200px;
+}
+
+
+
+.original-price {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.5);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    width: 107px;
+    height: 25px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+
+.sale-price {
+    height: 41px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 41px;
+    color: #3A4980;
+    flex: none;
+    order: 0;
+    flex-grow: 0; 
+}
+
+
+
+.discount {
+    background-color: white;
+    color: rgba(255, 0, 0, 0.5); 
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    border-radius: 5px;
+    position: absolute;
+    width: 81px;
+    height: 25px;
+    left: 930px;
+    top: 230px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+}
+
+.color-size-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    
+}
+
+.choose-color {
+    flex-basis: 45%;
+    position: absolute; 
+    top: 330px; 
+    left: 778px;
+
+    width: 118px;
+    height: 19px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #B9BBBF;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.trt {
+    box-sizing: border-box;
+    position: absolute;
+    width: 587px;
+    height: 691px;
+    left: 80px;
+    top: 80px;
+    background: url(laura-chouette-6Y2XstWtDvM-unsplash.jpg);
+    border: 1px solid #EDF0F8;
+    border-radius: 10px;
+}
+
+.susb {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: absolute;
+    width: 520px;
+    height: 115px;
+    left: 114px;
+    top: 808px;
+}
+.colors{
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 12px;
+
+width: 292px;
+height: 64px;
+
+
+flex: none;
+order: 1;
+flex-grow: 0;
+
+}
+.cart-button {
+    background-color:slateblue;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: absolute;
+    width: 309px;
+    height: 59px;
+    left: 966px;
+    top: 570px;
+    font-size: 15px;
+  }
+
+
+  
+  .cart-button:hover {
+    background-color: black;
+    color: white;
+  }
+
+
+  button {
+    background-color: #ccc;
+    border-color: #ccc;
+    color: blue ;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  #value {
+    padding: 10px 20px;
+  }
+.incbutton {
+    position: absolute;
+    width: 169px;
+    height: 59px;
+    left: 778px;
+    top: 570px;
+    background-color: #ccc;
+    border-radius: 30px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.incbutton button {
+    background-color: #ccc; 
+    border: none; 
+    color: blue; 
+    padding: 10px; 
+    border-radius: 50%; 
+    cursor: pointer;
+    margin: 0 10px; 
+    font-size: 30px; 
+}
+
+.product-description{
+    position: absolute;
+    width: 558px;
+    height: 224px;
+    left: 773px;
+    top: 673px;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+
+    color: #A3A3A3;
+}
+
+.radio-group {
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 11px;
+
+    width: 497px;
+    height: 31px;
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #ccc;
+    position: relative; 
+}
+
+.radio-group input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.radio-group input[type="radio"] + label::before {
+    content: "";
+    display: inline-block;
+    width: 16px; 
+    height: 16px; 
+    border: 1px solid white; 
+    border-radius: 50%; 
+    margin-right: 5px; 
+    background-color: rgba(204, 204, 204, 0.5); 
+}
+
+
+.radio-group input[type="radio"]:checked + label::before {
+    background-color: slateblue; 
+}
+
+.radio-group input[type="radio"]:checked + label {
+    background-color: rgba(106, 90, 205, 0.5);
+}
+
+.size-label{
+
+       
+        width: 109px;
+        height: 19px;
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        color: #B9BBBF;
+        
+        flex: none;
+        order: 0;
+        flex-grow: 0;
+}
+
+
+.choose-size::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #ccc;
+    margin-bottom: 10px; 
+}
+.choose-size{
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px;
+gap: 14px;
+position: absolute;
+width: 497px;
+height: 64px;
+left: 778px;
+top: 450px;
+font-size: 12px;
+}
+.line2{
+
+position: absolute;
+width: 582px;
+height: 0px;
+left: 778px;
+top: 310px;
+
+border: 1px solid #E4E4E4;
+
+}
+.line1{
+
+position: absolute;
+width: 582px;
+height: 0px;
+left: 778px;
+top: 200px;
+
+border: 1px solid #E4E4E4;
+
+}
+.cart-details-prompt {
+    color: black;
+    font-size: 14px;
+    margin-top: 10px; /* Adjust margin as needed */
+    position: absolute;
+    top: 630px;
+    left: 800px;
+    background-color: yellow;
+    border: 1px solid black;
+}
